@@ -1,0 +1,388 @@
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.login {
+/*    background: linear-gradient(to right bottom, #C40019, #AE0117);*/
+	width: 313px;
+    text-align: center;
+    box-shadow: 0 0 5rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.login-warp {
+    background-color: #C40019;
+}
+
+.login-top {
+    width: 95%;
+    margin: 0 auto;
+	
+    padding: 10px;
+}
+
+.login-top .login-header{
+    font-size: 2.4rem;
+    line-height: 20px;
+    font-weight: normal;
+    margin-bottom: 2.4rem;
+    padding: 0;
+    
+    color: white;
+}
+
+.login-top .login-types{
+    margin-bottom: 1.6rem;
+}
+
+.login-top .login-types input{
+    text-align: left;
+/*    font-family: Ariel, serif;*/
+    font-size: 14px;
+    display: block;
+    padding: 0 15px;
+/*    margin: 0 auto;*/
+    margin: 0 3px 8px 3px;
+    width: 100%;
+    border: none;
+    height: 3.5rem;
+    font-size: 2rem;
+    background: url('https://login.bankhapoalim.co.il/CAClientPages/ca/newLogin_files/images/sprite.png') 
+        no-repeat 0 0;
+    background-position: -765px 0;
+    border-radius: .4rem;
+}
+
+.login-top .login-types input:focus{
+    background: url('https://login.bankhapoalim.co.il/CAClientPages/ca/newLogin_files/images/sprite.png') 
+        no-repeat -3542px 0;
+}
+
+.login-top .login-types input:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.login-top .login-buttons{
+    text-align: center;
+}
+
+.login-top .login-buttons a:link,
+.login-top .login-buttons a:visited{
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration:none;
+    padding: .3rem;
+/*    transition: all .1s;*/
+}
+
+
+.login-top .login-buttons a.btn-login{
+    color:red;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(#fefefe, #cccccc);
+    width: 13.3rem;
+    border-radius: 10rem;
+    margin-bottom: 1.6rem;
+}
+
+.login-top .login-buttons a.btn-login:hover{
+    position: relative;
+    top: -1px;
+    background: linear-gradient(#cccccc,#fefefe);
+}
+
+.login-top .login-buttons a.btn-login:active{
+    position: relative;
+    top: 1px;
+}
+
+.login-top .login-buttons a.forgot-password:link,
+.login-top .login-buttons a.forgot-password:visited{
+    
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.login-top .login-buttons a.forgot-password:hover {
+	text-decoration: underline;
+}
+
+
+.login-bottom {
+	background-color: #AE0117;
+    padding: 20px;
+    position: relative;
+}
+
+.login-bottom .button {
+    width: 27.2rem;
+    height: 6.2rem;
+    background: linear-gradient(white, #cccccc);
+    padding: 3rem 6rem;
+    border-radius: 3px;
+    display: inline-block;
+    box-shadow: 0 .4rem 1.5rem rgba(0,0,0,.35);
+}
+
+.login-bottom .button:hover{
+    cursor: pointer;
+    background: linear-gradient(#cccccc,white);
+}
+
+.login-bottom .button > *{
+/*    position: relative;*/
+}
+
+.login-bottom .button .button__center{
+	 position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 3rem;
+}
+
+.login-bottom .button span{
+    display: inline-block;
+    font-size: 1.5rem;
+    left: -2rem;
+    
+}
+
+.login-bottom .button img{
+    left: -3rem;
+}
+
+.login-bottom .button > *:not(:last-child){
+    margin-right: 2rem;
+}
+
+.login-bottom a:link,
+.login-bottom a:visited{
+	display: inline-block;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    color: #eee;
+    text-decoration: none;
+    text-shadow: 0 .2rem 1rem rgba(0,0,0,.7);
+    margin-bottom: 1rem;
+}
+
+.login-bottom a:hover{
+    text-decoration: underline;
+}
+
+
+/*challenge 2*/
+.profile {
+	width: 60rem;
+    background: #6E6D7A;
+    font-size: 1.5rem;
+    padding: 2rem;
+    position: relative;
+    
+}
+
+.profile-info {
+	
+}
+
+.photo {
+    margin: 10rem 10rem;
+/*	float: left;*/
+    background: red;
+    background: linear-gradient(
+        #EBEEF5 0%, 
+        #EBEEF5 50%,
+        #F3405E 50%,
+        #F3405E 100%);
+    height: 300px;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 .9rem 3rem #F3405E;
+}
+
+.review {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 90%;
+    background: white;
+    padding: 8px;
+    font-size: 1.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.5);
+}
+
+.photo-img {
+	position: absolute;
+}
+
+.rate-star{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+	font-size: 1.5rem;;
+/*    width: 10rem;*/
+/*    background: red;*/
+    text-align: center;
+}
+
+.rate-star ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    
+}
+
+.rate-star ul li {
+	display: inline-block;
+    transition: all .2s ease;
+}
+
+.rate-star ul li:hover{
+    cursor: pointer;
+}
+
+.lar {
+	color: red !important;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.profile h1 {
+	color: white;
+}
+
+
+.profile p {
+	color:#7A8298;
+}
+
+hr{
+    border: dashed 2px grey;
+    margin-top: 4rem;
+}
+
+h2{
+    color: white;
+    
+}
+
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.review textarea {
+	width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+.review textarea:focus{
+    outline: none;
+}
+
+.btn-review {
+	position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    width: 200px;*/
+}
+
+.btn-review button{
+    margin: 0 auto;
+    outline: none;
+	border: none;
+    font-size: 2.4rem;
+    background: none;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    color: white;
+}
+
+.resize-icon {
+	font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.btn-review button:hover{
+/*    text-decoration: underline;*/
+    color:dodgerblue;
+    cursor: pointer;
+    text-shadow: 0 .3rem rgba(0,0,0,.2);
+}
+
+.btn-review button:active{
+    outline: none;
+}
+
+.photo-img {
+	position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background: url(profile.jpg);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid white;
+}
+
+.photo-img:hover{
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.15);
+    
+}
+.warp-photo {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    z-index: 22;
+    transform: translate(-50%,-50%);
+}
+
+.info-width {
+    width: 24rem;
+}
+
+.space {
+    margin: 10rem;
+}
